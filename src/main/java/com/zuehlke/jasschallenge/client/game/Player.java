@@ -30,8 +30,8 @@ public class Player {
         this(name, new RandomJassStrategy());
     }
 
-    public Player(String name, JassStrategy strategy) {
-        this.name = name;
+    public Player(String teamName, JassStrategy strategy) {
+        this.name = teamName;
         this.cards = EnumSet.noneOf(Card.class);
         this.currentJassStrategy = strategy;
     }
